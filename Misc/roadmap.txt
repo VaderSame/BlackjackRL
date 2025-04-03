@@ -1,0 +1,73 @@
+✅ Phase 1: BlackjackRL Environment (Current Phase — Nearly Complete)
+
+Status:
+
+    Environment designed (modular, configurable).
+
+    Core functionality (hand logic, game resets, card drawing, rewards).
+
+Next Immediate Step:
+
+    Finish implementing and rigorously test the step(action) method (handling hit, stand, double, surrender; leave split optional for now).
+
+🔜 Phase 2: Environment Testing and Baseline Setup
+
+    Create scripts/tests to validate environment correctness:
+
+    Verify correct reward logic, action legality.
+
+    Simulate multiple episodes with a random agent.
+
+    Implement "Basic Strategy" agent as baseline for comparison.
+
+🔜 Phase 3: Implement Tabular RL Methods
+
+    Algorithms (following your papers closely):
+
+    Q-Learning (tabular, ε-greedy exploration)
+
+    SARSA (optional)
+
+    Monte Carlo (MC) for episodic policy evaluation
+
+Evaluate agent performance and convergence (~millions of episodes).
+
+🔜 Phase 4: CSV Strategy Table Generation
+
+    Export final learned policies (from Q-learning/MC) into readable CSV tables:
+
+    Hard hands (hard_totals.csv)
+
+    Soft hands (soft_totals.csv)
+
+    Splitting scenarios (splits.csv, optional)
+
+🔜 Phase 5: Advanced Extensions (Optional but recommended)
+
+    Implement card counting mechanisms (Hi-Lo, Zen, APC).
+
+    Include running card count as an additional state feature.
+
+    Retrain Q-learning or Monte Carlo with card counting enabled, assessing performance improvements.
+
+🔜 Phase 6: Implement PPO (Policy Gradient Method)
+
+    Replace tabular policies with neural networks.
+
+    Use PPO to train a policy-based agent with:
+
+    Clipped surrogate objective
+
+    Entropy bonus
+
+    Value loss estimation
+
+Evaluate against previous tabular approaches.
+
+🔜 Phase 7: Comprehensive Evaluation
+
+    Direct comparisons (win-rates, strategy match percentages, convergence speed) across all RL algorithms:
+
+    Random vs. Basic vs. Q-learning vs. PPO
+
+    Final detailed report and visualizations.
