@@ -1,7 +1,7 @@
 from blackjack import BlackjackEnv
 import random
 
-def run_random_agent(env, num_episodes=100000):
+def run_random_agent(env, num_episodes=4000000):
     total_reward = 0
     wins = 0
     for i in range(num_episodes):
@@ -30,4 +30,4 @@ env = BlackjackEnv(num_decks=6,
                    allow_double=True, 
                    allow_split=True, 
                    allow_surrender=False)
-run_random_agent(env, num_episodes=100000)
+run_random_agent(env, num_episodes=4000000)

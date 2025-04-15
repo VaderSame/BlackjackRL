@@ -1,0 +1,33 @@
+Strategy Table Overview 
+- Hard Table Overview (Usable Ace = False)
+Policy looks quite stable and close to basic strategy:
+
+From 4 to 11: Mostly hit, which is expected.
+
+Around 12–16: It starts to stand vs. dealer cards 4–6, and hits otherwise — this matches standard logic (stand when the dealer is more likely to bust).
+
+From 17 to 21: Always stand, as expected.
+
+ What stands out:
+Looks textbook-perfect for a simplified no-surrender rule set.
+
+- Soft Table Overview (Usable Ace = True)
+Soft totals usually behave differently in basic strategy:
+
+We’ll often hit even with higher totals (e.g., soft 17 or 18).
+
+And our strategy chart reflects that.
+
+Examples from your chart:
+
+Soft 13–15 (Ace+2 to Ace+4): Mostly hit —  correct.
+
+Soft 18 (Ace+7):
+
+stand vs. 2, 7, 8.
+
+hit vs. 9, 10 — classic strategy would even suggest hit or double vs. 9/10.
+
+Soft 19–21: Always stand —  correct.
+
+
