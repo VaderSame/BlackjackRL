@@ -24,11 +24,32 @@ Next Immediate Step:
 
     Algorithms (following your papers closely):
 
-    Q-Learning (tabular, ε-greedy exploration)
+    1. Monte Carlo (MC) for episodic policy evaluation
+    
+        Implement This Pipeline (Recommended Path):
 
-    SARSA (optional)
+        First-Visit MC Control with ε-greedy policy improvement
 
-    Monte Carlo (MC) for episodic policy evaluation
+            This is your core reproducible experiment.
+
+        Compare with Every-Visit MC Control and analyze differences
+
+            Provides a solid ablation study.
+
+        Add Off-Policy MC Control with Importance Sampling
+
+            Show that you understand policy evaluation under different sampling distributions.
+
+    2. Export strategy tables from each policy and analyze:
+
+            Match rate with basic strategy
+
+            Performance vs. Q-learning and PPO
+    
+    
+    3. Q-Learning (tabular, ε-greedy exploration)
+
+    
 
 Evaluate agent performance and convergence (~millions of episodes).
 
