@@ -1,0 +1,16 @@
+
+Both algorithms are unbiased:
+
+They estimate the same return 
+𝐺(t) , just with different sampling methods.
+
+Every-Visit has lower bias, higher variance; First-Visit has slightly lower variance but may ignore repeat (s,a) visits.
+
+In your case (Blackjack):
+
+Most episodes are short, few repeated (s,a) pairs.
+
+So the difference between "first" and "every" visit is negligible in impact.
+
+Convergence to optimal policy happens similarly.
+

@@ -1,0 +1,55 @@
+Weighted Off-Policy Monte Carlo: Results Summary
+Convergence Behavior
+Average Reward:
+
+Settles between –0.36 to –0.39
+
+Slightly worse than first-visit (~–0.1) or every-visit (~–0.08), which is expected due to:
+
+High variance from importance sampling
+
+No control over the behavior policy (uniform random)
+
+Policy Changes:
+
+Drops to 0 around ~950K episodes
+
+Shows convergence — even in off-policy training
+
+Interpretation of strategy_weighted_offpolicy_hard.csv
+Consistent with Expected Blackjack Strategy:
+For low totals (4–8): Always hit (correct behavior)
+
+At total 12:
+
+- stand against dealer 4–6 → aligns with basic strategy
+- hit against dealer 2–3 and 7–10 → correct (12 is a trap hand)
+
+From 13–16:
+
+- stand vs dealer 2–6
+- hit vs 7–10 → This is classic conservative vs aggressive strategy.
+
+Deviations:
+A few rows like Player Sum 9 or 10 have full rows of hit, where in optimal strategy some double or stand might apply. That’s okay — because this model does not optimize for double or implement double-aware logic.
+
+Interpretation of strategy_weighted_offpolicy_soft.csv
+Mixed Quality — but some structure:
+For soft totals like 12–14, you're seeing:
+
+- Mostly hit, as expected (these are weak hands)
+
+At soft 18:
+
+- stand vs 2–6
+- hit vs 9, 10
+
+This matches optimal soft 18 strategy, which is one of the trickiest hands.
+
+soft 19+: Almost always stand, good.
+
+Minor inconsistencies:
+Some non-monotonic patterns exist in soft 13–17 (e.g. alternating stand/hit).
+
+This could be due to variance in off-policy sampling (weights skew certain states).
+

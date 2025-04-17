@@ -49,8 +49,6 @@ Next Immediate Step:
     
     3. Q-Learning (tabular, ε-greedy exploration)
 
-    
-
 Evaluate agent performance and convergence (~millions of episodes).
 
 🔜 Phase 4: CSV Strategy Table Generation
@@ -63,15 +61,7 @@ Evaluate agent performance and convergence (~millions of episodes).
 
     Splitting scenarios (splits.csv, optional)
 
-🔜 Phase 5: Advanced Extensions (Optional but recommended)
-
-    Implement card counting mechanisms (Hi-Lo, Zen, APC).
-
-    Include running card count as an additional state feature.
-
-    Retrain Q-learning or Monte Carlo with card counting enabled, assessing performance improvements.
-
-🔜 Phase 6: Implement PPO (Policy Gradient Method)
+🔜 Phase 5: Implement PPO (Policy Gradient Method)
 
     Replace tabular policies with neural networks.
 
@@ -85,7 +75,7 @@ Evaluate agent performance and convergence (~millions of episodes).
 
 Evaluate against previous tabular approaches.
 
-🔜 Phase 7: Comprehensive Evaluation
+🔜 Phase 6: Comprehensive Evaluation
 
     Direct comparisons (win-rates, strategy match percentages, convergence speed) across all RL algorithms:
 
